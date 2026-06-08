@@ -12,8 +12,19 @@ import { DOCUMENT } from '@angular/common';
 import { MENU } from './menu';
 import { MenuItem } from './menu.model';
 import { environment } from '../../../environments/environment';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { SimplebarAngularModule } from 'simplebar-angular';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    TranslateModule,
+    SimplebarAngularModule
+  ],
   selector: 'app-horizontaltopbar',
   templateUrl: './horizontaltopbar.component.html',
   styleUrls: ['./horizontaltopbar.component.scss']

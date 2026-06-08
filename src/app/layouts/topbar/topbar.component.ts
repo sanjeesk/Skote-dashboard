@@ -7,8 +7,19 @@ import { environment } from '../../../environments/environment';
 import { CookieService } from 'ngx-cookie-service';
 import { LanguageService } from '../../core/services/language.service';
 import { TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { SimplebarAngularModule } from 'simplebar-angular';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    TranslateModule,
+    SimplebarAngularModule
+  ],
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
   styleUrls: ['./topbar.component.scss']

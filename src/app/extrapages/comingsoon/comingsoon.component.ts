@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
-import { map } from 'rxjs/internal/operators';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-comingsoon',

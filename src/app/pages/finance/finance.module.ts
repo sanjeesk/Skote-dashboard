@@ -4,7 +4,10 @@ import { FinanceRoutingModule } from './finance-routing.module';
 import { FinanceComponent } from './finance.component';
 
 @NgModule({
-  declarations: [FinanceComponent],
-  imports: [CommonModule, FinanceRoutingModule]
+  imports: [
+    FinanceComponent,
+    CommonModule,
+    FinanceRoutingModule
+  ]
 })
 export class FinanceModule { }

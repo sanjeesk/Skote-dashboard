@@ -1,6 +1,6 @@
 <!-- Right Sidebar -->
 
-<div class="right-bar" (clickOutside)="hide()" [exclude]="'.right-bar-toggle'">
+<div class="right-bar" (document:click)="onDocumentClick($event)">
 
   <ngx-simplebar class="h-100">
     <div class="rightbar-title px-3 py-4">

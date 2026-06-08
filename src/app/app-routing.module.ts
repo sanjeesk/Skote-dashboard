@@ -5,6 +5,10 @@ import { AuthGuard } from './core/guards/auth.guard';
 import { LayoutComponent } from './layouts/layout.component';
 import { CyptolandingComponent } from './cyptolanding/cyptolanding.component';
 import { Page404Component } from './extrapages/page404/page404.component';
+import { NgbNavModule, NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   { path: 'account', loadChildren: () => import('./account/account.module').then(m => m.AccountModule) },
@@ -16,7 +20,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top', relativeLinkResolution: 'legacy' })],
+  imports: [
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' }),
+    CommonModule,
+    NgbNavModule,
+    NgbAccordionModule,
+    CarouselModule,
+    ScrollToModule
+  ],
   exports: [RouterModule]
 })
 

@@ -1,4 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { NgApexchartsModule } from 'ng-apexcharts';
 import {
   ApexChart,
   ApexAxisChartSeries,
@@ -102,9 +105,15 @@ export interface ActivityItem {
 }
 
 @Component({
+  standalone: true,
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  imports: [
+    CommonModule,
+    RouterModule,
+    NgApexchartsModule,
+  ]
 })
 export class DashboardComponent implements OnInit, AfterViewInit {
 

@@ -36,8 +36,26 @@ import { PlaceholderComponent } from './placeholder/placeholder.component';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [AlertsComponent, ButtonsComponent, CardsComponent, CarouselComponent, DropdownsComponent, GridComponent, ImagesComponent, ModalsComponent, ProgressbarComponent, TypographyComponent, GeneralComponent, ColorsComponent, VideoComponent, TabsComponent, SweetalertComponent, RangesliderComponent, ImagecropperComponent, LightboxComponent, PlaceholderComponent],
   imports: [
+    AlertsComponent,
+    ButtonsComponent,
+    CardsComponent,
+    CarouselComponent,
+    DropdownsComponent,
+    GridComponent,
+    ImagesComponent,
+    ModalsComponent,
+    ProgressbarComponent,
+    TypographyComponent,
+    GeneralComponent,
+    ColorsComponent,
+    VideoComponent,
+    TabsComponent,
+    SweetalertComponent,
+    RangesliderComponent,
+    ImagecropperComponent,
+    LightboxComponent,
+    PlaceholderComponent,
     CommonModule,
     UiRoutingModule,
     UIModule,
@@ -58,7 +76,7 @@ import { PlaceholderComponent } from './placeholder/placeholder.component';
     NgxYoutubePlayerModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE'
-    }),
+    })
   ],
 })
 export class UiModule { }

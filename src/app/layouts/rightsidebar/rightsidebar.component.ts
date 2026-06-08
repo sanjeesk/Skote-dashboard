@@ -2,8 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { EventService } from '../../core/services/event.service';
 
 import { LAYOUT_WIDTH, SIDEBAR_TYPE, TOPBAR } from '../layouts.model';
+import { CommonModule } from '@angular/common';
+import { SimplebarAngularModule } from 'simplebar-angular';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    SimplebarAngularModule
+  ],
   selector: 'app-rightsidebar',
   templateUrl: './rightsidebar.component.html',
   styleUrls: ['./rightsidebar.component.scss']
@@ -44,6 +51,12 @@ export class RightsidebarComponent implements OnInit {
   /**
    * Hide the sidebar
    */
+
+  onDocumentClick(event: MouseEvent) {
+    if (!(event.target as HTMLElement).closest('.right-bar')) {
+      document.body.classList.remove('right-bar-enabled');
+    }
+  }
   public hide() {
     document.body.classList.remove('right-bar-enabled');
   }
@@ -77,3 +90,4 @@ export class RightsidebarComponent implements OnInit {
     this.eventService.broadcast('changeSidebartype', sidebar);
   }
 }
+

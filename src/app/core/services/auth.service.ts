@@ -1,6 +1,7 @@
+import { environment } from '../../../environments/environment';
 import { Injectable } from '@angular/core';
 
-import { getFirebaseBackend } from '../../authUtils';
+import { initFirebaseBackend } from '../../authUtils';
 
 import { User } from '../models/auth.models';
 
@@ -16,8 +17,8 @@ export class AuthenticationService {
     /**
      * Returns the current user
      */
-    public currentUser(): User {
-        return getFirebaseBackend().getAuthenticatedUser();
+    public currentUser(): any {
+        return initFirebaseBackend(environment.firebaseConfig).then((backend: any) => backend.getAuthenticatedUser());
     }
 
     /**
@@ -26,7 +27,7 @@ export class AuthenticationService {
      * @param password password of user
      */
     login(email: string, password: string) {
-        return getFirebaseBackend().loginUser(email, password).then((response: any) => {
+        return initFirebaseBackend(environment.firebaseConfig).then((backend: any) => backend.loginUser(email, password)).then((response: any) => {
             const user = response;
             return user;
         });
@@ -38,7 +39,7 @@ export class AuthenticationService {
      * @param password password
      */
     register(email: string, password: string) {
-        return getFirebaseBackend().registerUser(email, password).then((response: any) => {
+        return initFirebaseBackend(environment.firebaseConfig).then((backend: any) => backend.registerUser(email, password)).then((response: any) => {
             const user = response;
             return user;
         });
@@ -49,7 +50,7 @@ export class AuthenticationService {
      * @param email email
      */
     resetPassword(email: string) {
-        return getFirebaseBackend().forgetPassword(email).then((response: any) => {
+        return initFirebaseBackend(environment.firebaseConfig).then((backend: any) => backend.forgetPassword(email)).then((response: any) => {
             const message = response.data;
             return message;
         });
@@ -59,8 +60,6 @@ export class AuthenticationService {
      * Logout the user
      */
     logout() {
-        // logout the user
-        getFirebaseBackend().logout();
+        initFirebaseBackend(environment.firebaseConfig).then((backend: any) => backend.logout());
     }
 }
-

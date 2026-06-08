@@ -5,8 +5,19 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { AuthenticationService } from '../../../core/services/auth.service';
 import { environment } from '../../../../environments/environment';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    CarouselModule,
+    NgbAlertModule
+  ],
+  standalone: true,
   selector: 'app-recoverpwd2',
   templateUrl: './recoverpwd2.component.html',
   styleUrls: ['./recoverpwd2.component.scss']

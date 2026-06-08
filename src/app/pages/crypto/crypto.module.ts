@@ -27,8 +27,15 @@ import { OrdersComponent } from './orders/orders.component';
 
 
 @NgModule({
-  declarations: [WalletComponent, BuysellComponent, ExchangeComponent, LendingComponent, KycapplicationComponent, WalletSortableService, OrdersComponent, OrderSortableService],
   imports: [
+    WalletComponent,
+    BuysellComponent,
+    ExchangeComponent,
+    LendingComponent,
+    KycapplicationComponent,
+    WalletSortableService,
+    OrdersComponent,
+    OrderSortableService,
     CommonModule,
     UIModule,
     CryptoRoutingModule,

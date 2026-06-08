@@ -21,8 +21,19 @@ import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [MaintenanceComponent, Page404Component, Page500Component, LockscreenComponent, Lockscreen2Component, ConfirmmailComponent, Confirmmail2Component, VerificationComponent, Verification2Component, SteptwoverificationComponent, Steptwoverification2Component, ComingsoonComponent],
   imports: [
+    MaintenanceComponent,
+    Page404Component,
+    Page500Component,
+    LockscreenComponent,
+    Lockscreen2Component,
+    ConfirmmailComponent,
+    Confirmmail2Component,
+    VerificationComponent,
+    Verification2Component,
+    SteptwoverificationComponent,
+    Steptwoverification2Component,
+    ComingsoonComponent,
     CommonModule,
     CarouselModule,
     ExtrapagesRoutingModule,

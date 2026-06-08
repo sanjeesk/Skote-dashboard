@@ -4,8 +4,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { AuthenticationService } from '../../../core/services/auth.service';
 import { environment } from '../../../../environments/environment';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    NgbAlertModule
+  ],
+  standalone: true,
   selector: 'app-passwordreset',
   templateUrl: './passwordreset.component.html',
   styleUrls: ['./passwordreset.component.scss']

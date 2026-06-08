@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NgOtpInputModule } from 'ng-otp-input';
 
 @Component({
+  imports: [
+    CommonModule,
+    NgOtpInputModule
+  ],
+  standalone: true,
   selector: 'app-steptwoverification',
   templateUrl: './steptwoverification.component.html',
   styleUrls: ['./steptwoverification.component.scss']

@@ -5,8 +5,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { SellingchartComponent } from './sellingchart/sellingchart.component';
 
 @NgModule({
-  declarations: [SellingchartComponent],
   imports: [
+    SellingchartComponent,
     CommonModule,
     NgApexchartsModule
   ],

@@ -7,8 +7,9 @@ import { StatComponent } from './stat/stat.component';
 import { TransactionComponent } from './transaction/transaction.component';
 
 @NgModule({
-  declarations: [StatComponent, TransactionComponent],
   imports: [
+    StatComponent,
+    TransactionComponent,
     CommonModule,
     NgbModalModule
   ],

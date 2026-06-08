@@ -4,8 +4,23 @@ import { Router, NavigationEnd } from '@angular/router';
 import { EventService } from '../../core/services/event.service';
 
 import { SIDEBAR_TYPE } from "../layouts.model";
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { TopbarComponent } from '../topbar/topbar.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
+import { FooterComponent } from '../footer/footer.component';
+import { RightsidebarComponent } from '../rightsidebar/rightsidebar.component';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    TopbarComponent,
+    SidebarComponent,
+    FooterComponent,
+    RightsidebarComponent
+  ],
   selector: 'app-vertical',
   templateUrl: './vertical.component.html',
   styleUrls: ['./vertical.component.scss']

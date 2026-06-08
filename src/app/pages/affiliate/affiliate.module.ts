@@ -4,7 +4,10 @@ import { AffiliateRoutingModule } from './affiliate-routing.module';
 import { AffiliateComponent } from './affiliate.component';
 
 @NgModule({
-  declarations: [AffiliateComponent],
-  imports: [CommonModule, AffiliateRoutingModule]
+  imports: [
+    AffiliateComponent,
+    CommonModule,
+    AffiliateRoutingModule
+  ]
 })
 export class AffiliateModule { }

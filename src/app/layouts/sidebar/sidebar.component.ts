@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, Input, OnChanges } from '@angular/core';
-import MetisMenu from 'metismenujs/dist/metismenujs';
+import MetisMenu from 'metismenujs';
 import { EventService } from '../../core/services/event.service';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -8,8 +8,19 @@ import { HttpClient } from '@angular/common/http';
 import { MENU } from './menu';
 import { MenuItem } from './menu.model';
 import { TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { SimplebarAngularModule } from 'simplebar-angular';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    TranslateModule,
+    SimplebarAngularModule
+  ],
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']

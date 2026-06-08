@@ -4,7 +4,10 @@ import { TagsRoutingModule } from './tags-routing.module';
 import { TagsComponent } from './tags.component';
 
 @NgModule({
-  declarations: [TagsComponent],
-  imports: [CommonModule, TagsRoutingModule]
+  imports: [
+    TagsComponent,
+    CommonModule,
+    TagsRoutingModule
+  ]
 })
 export class TagsModule { }

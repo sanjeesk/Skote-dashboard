@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NO_ERRORS_SCHEMA} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -7,8 +7,19 @@ import { AuthenticationService } from '../../../core/services/auth.service';
 import { environment } from '../../../../environments/environment';
 import { first } from 'rxjs/operators';
 import { UserProfileService } from '../../../core/services/user.service';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    NgbAlertModule
+  , CarouselModule],
+  schemas: [NO_ERRORS_SCHEMA],
+  standalone: true,
   selector: 'app-register2',
   templateUrl: './register2.component.html',
   styleUrls: ['./register2.component.scss']

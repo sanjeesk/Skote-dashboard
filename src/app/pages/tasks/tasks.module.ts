@@ -16,8 +16,10 @@ import { KanbanboardComponent } from './kanbanboard/kanbanboard.component';
 import { CreatetaskComponent } from './createtask/createtask.component';
 
 @NgModule({
-  declarations: [ListComponent, KanbanboardComponent, CreatetaskComponent],
   imports: [
+    ListComponent,
+    KanbanboardComponent,
+    CreatetaskComponent,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,

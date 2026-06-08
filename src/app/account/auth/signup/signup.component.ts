@@ -6,8 +6,17 @@ import { AuthenticationService } from '../../../core/services/auth.service';
 import { environment } from '../../../../environments/environment';
 import { first } from 'rxjs/operators';
 import { UserProfileService } from '../../../core/services/user.service';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    NgbAlertModule
+  ],
+  standalone: true,
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.scss']

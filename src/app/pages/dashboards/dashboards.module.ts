@@ -1,4 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import {
   ApexChart,
   ApexAxisChartSeries,

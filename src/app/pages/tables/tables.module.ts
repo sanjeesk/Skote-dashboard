@@ -13,8 +13,10 @@ import { BasicComponent } from './basic/basic.component';
 import { AdvancedtableComponent } from './advancedtable/advancedtable.component';
 
 @NgModule({
-  declarations: [BasicComponent, AdvancedtableComponent, AdvancedSortableDirective],
   imports: [
+    BasicComponent,
+    AdvancedtableComponent,
+    AdvancedSortableDirective,
     CommonModule,
     TablesRoutingModule,
     UIModule,

@@ -9,8 +9,9 @@ import { ListComponent } from './list/list.component';
 import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
-  declarations: [ListComponent, DetailComponent],
   imports: [
+    ListComponent,
+    DetailComponent,
     CommonModule,
     InvoicesRoutingModule,
     UIModule,

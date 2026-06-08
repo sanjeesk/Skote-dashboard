@@ -4,7 +4,10 @@ import { BrandsRoutingModule } from './brands-routing.module';
 import { BrandsComponent } from './brands.component';
 
 @NgModule({
-  declarations: [BrandsComponent],
-  imports: [CommonModule, BrandsRoutingModule]
+  imports: [
+    BrandsComponent,
+    CommonModule,
+    BrandsRoutingModule
+  ]
 })
 export class BrandsModule { }

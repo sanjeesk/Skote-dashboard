@@ -15,15 +15,18 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
-  declarations: [UsergridComponent, UserlistComponent, ProfileComponent],
   imports: [
+    UsergridComponent,
+    UserlistComponent,
+    ProfileComponent,
     CommonModule,
     ContactsRoutingModule,
     WidgetModule,
     UIModule,
     NgSelectModule,
     NgApexchartsModule,
-    FormsModule, ReactiveFormsModule ,
+    FormsModule,
+    ReactiveFormsModule,
     NgbTooltipModule
   ]
 })

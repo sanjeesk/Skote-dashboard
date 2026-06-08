@@ -4,7 +4,10 @@ import { CampaignsRoutingModule } from './campaigns-routing.module';
 import { CampaignsComponent } from './campaigns.component';
 
 @NgModule({
-  declarations: [CampaignsComponent],
-  imports: [CommonModule, CampaignsRoutingModule]
+  imports: [
+    CampaignsComponent,
+    CommonModule,
+    CampaignsRoutingModule
+  ]
 })
 export class CampaignsModule { }

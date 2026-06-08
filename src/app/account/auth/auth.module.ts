@@ -16,8 +16,13 @@ import { AuthRoutingModule } from './auth-routing';
 import { PasswordresetComponent } from './passwordreset/passwordreset.component';
 
 @NgModule({
-  declarations: [LoginComponent, Login2Component, SignupComponent, PasswordresetComponent, Register2Component, Recoverpwd2Component],
   imports: [
+    LoginComponent,
+    Login2Component,
+    SignupComponent,
+    PasswordresetComponent,
+    Register2Component,
+    Recoverpwd2Component,
     CommonModule,
     ReactiveFormsModule,
     FormsModule,

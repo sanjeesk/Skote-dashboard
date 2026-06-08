@@ -1,7 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
+  imports: [
+    CommonModule,
+    CarouselModule
+  ],
+  standalone: true,
   selector: 'app-lockscreen2',
   templateUrl: './lockscreen2.component.html',
   styleUrls: ['./lockscreen2.component.scss']

@@ -1,15 +1,22 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
+import { VerticalComponent } from './vertical/vertical.component';
+import { HorizontalComponent } from './horizontal/horizontal.component';
 import { EventService } from '../core/services/event.service';
-
 import {
   LAYOUT_VERTICAL, LAYOUT_HORIZONTAL, LAYOUT_WIDTH, TOPBAR
 } from './layouts.model';
 
 @Component({
+  standalone: true,
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  styleUrls: ['./layout.component.scss'],
+  imports: [
+    CommonModule,
+    VerticalComponent,
+    HorizontalComponent,
+  ]
 })
 
 export class LayoutComponent implements OnInit, AfterViewInit {

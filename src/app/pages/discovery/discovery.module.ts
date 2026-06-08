@@ -4,7 +4,10 @@ import { DiscoveryRoutingModule } from './discovery-routing.module';
 import { DiscoveryComponent } from './discovery.component';
 
 @NgModule({
-  declarations: [DiscoveryComponent],
-  imports: [CommonModule, DiscoveryRoutingModule]
+  imports: [
+    DiscoveryComponent,
+    CommonModule,
+    DiscoveryRoutingModule
+  ]
 })
 export class DiscoveryModule { }

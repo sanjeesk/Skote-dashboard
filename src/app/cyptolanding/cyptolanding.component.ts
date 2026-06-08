@@ -1,11 +1,27 @@
-import { Component, OnInit, ElementRef, OnDestroy } from '@angular/core';
+import { ScrollspyDirective } from './shared/scrollspy.directive';
+import { Component, OnInit, ElementRef, OnDestroy , NO_ERRORS_SCHEMA} from '@angular/core';
 import { interval, Observable } from 'rxjs';
-import { map } from 'rxjs/internal/operators';
+import { map } from 'rxjs/operators';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgbNavModule, NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
+  imports: [
+    CommonModule,
+    RouterModule,
+    CarouselModule,
+    NgbNavModule,
+    NgbAccordionModule,
+    ScrollToModule
+  , ScrollspyDirective],
+  standalone: true,
   selector: 'app-cyptolanding',
   templateUrl: './cyptolanding.component.html',
+  schemas: [NO_ERRORS_SCHEMA],
   styleUrls: ['./cyptolanding.component.scss']
 })
 

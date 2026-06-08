@@ -15,8 +15,11 @@ import { OverviewComponent } from './overview/overview.component';
 import { CreateComponent } from './create/create.component';
 
 @NgModule({
-  declarations: [ProjectgridComponent, ProjectlistComponent, OverviewComponent, CreateComponent],
   imports: [
+    ProjectgridComponent,
+    ProjectlistComponent,
+    OverviewComponent,
+    CreateComponent,
     CommonModule,
     ProjectsRoutingModule,
     UIModule,

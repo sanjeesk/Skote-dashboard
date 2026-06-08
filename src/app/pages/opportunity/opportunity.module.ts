@@ -4,7 +4,10 @@ import { OpportunityRoutingModule } from './opportunity-routing.module';
 import { OpportunityComponent } from './opportunity.component';
 
 @NgModule({
-  declarations: [OpportunityComponent],
-  imports: [CommonModule, OpportunityRoutingModule]
+  imports: [
+    OpportunityComponent,
+    CommonModule,
+    OpportunityRoutingModule
+  ]
 })
 export class OpportunityModule { }

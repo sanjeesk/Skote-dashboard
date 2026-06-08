@@ -13,8 +13,12 @@ import { BillingComponent } from './billing/billing.component';
 import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
-  declarations: [InboxComponent, EmailreadComponent, BasicComponent, BillingComponent, AlertComponent],
   imports: [
+    InboxComponent,
+    EmailreadComponent,
+    BasicComponent,
+    BillingComponent,
+    AlertComponent,
     CommonModule,
     UIModule,
     EmailRoutingModule,
@@ -22,7 +26,7 @@ import { AlertComponent } from './alert/alert.component';
     NgbDropdownModule,
     NgbPaginationModule,
     CKEditorModule,
-    FormsModule,
+    FormsModule
   ]
 })
 export class EmailModule { }

@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 import { ScrollspyDirective } from './scrollspy.directive'
 
 @NgModule({
-    declarations: [ScrollspyDirective],
     imports: [
-        CommonModule,
-    ],
+    ScrollspyDirective,
+    CommonModule
+  ],
     exports: [ScrollspyDirective]
 })
 export class SharedModule { }

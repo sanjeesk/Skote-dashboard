@@ -25,8 +25,16 @@ import { LayoutsComponent } from './layouts/layouts.component';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [ElementsComponent, ValidationComponent, EditorComponent, UploadsComponent, WizardComponent, MaskComponent, AdvancedformComponent, RepeaterComponent, LayoutsComponent],
   imports: [
+    ElementsComponent,
+    ValidationComponent,
+    EditorComponent,
+    UploadsComponent,
+    WizardComponent,
+    MaskComponent,
+    AdvancedformComponent,
+    RepeaterComponent,
+    LayoutsComponent,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,

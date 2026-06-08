@@ -13,8 +13,11 @@ import { PricingComponent } from './pricing/pricing.component';
 
 
 @NgModule({
-  declarations: [StarterComponent, TimelineComponent, FaqsComponent, PricingComponent],
   imports: [
+    StarterComponent,
+    TimelineComponent,
+    FaqsComponent,
+    PricingComponent,
     CommonModule,
     UtiliytRoutingModule,
     UIModule,

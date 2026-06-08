@@ -9,14 +9,14 @@ import { MapsRoutingModule } from './maps-routing.module';
 import { GoogleComponent } from './google/google.component';
 
 @NgModule({
-  declarations: [GoogleComponent],
   imports: [
+    GoogleComponent,
     CommonModule,
     MapsRoutingModule,
     UIModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE'
-    }),
+    })
   ]
 })
 export class MapsModule { }

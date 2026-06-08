@@ -1,7 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgOtpInputModule } from 'ng-otp-input';
 
 @Component({
+  imports: [
+    CommonModule,
+    CarouselModule,
+    NgOtpInputModule
+  ],
+  standalone: true,
   selector: 'app-steptwoverification2',
   templateUrl: './steptwoverification2.component.html',
   styleUrls: ['./steptwoverification2.component.scss']

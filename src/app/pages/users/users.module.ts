@@ -4,7 +4,10 @@ import { UsersRoutingModule } from './users-routing.module';
 import { UsersComponent } from './users.component';
 
 @NgModule({
-  declarations: [UsersComponent],
-  imports: [CommonModule, UsersRoutingModule]
+  imports: [
+    UsersComponent,
+    CommonModule,
+    UsersRoutingModule
+  ]
 })
 export class UsersModule { }

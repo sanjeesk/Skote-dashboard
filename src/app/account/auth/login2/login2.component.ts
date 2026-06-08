@@ -9,8 +9,19 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { first } from 'rxjs/operators';
 
 import { environment } from '../../../../environments/environment';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    CarouselModule,
+    NgbAlertModule
+  ],
+  standalone: true,
   selector: 'app-login2',
   templateUrl: './login2.component.html',
   styleUrls: ['./login2.component.scss']

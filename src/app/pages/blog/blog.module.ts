@@ -11,14 +11,16 @@ import { BloggridComponent } from '../blog/bloggrid/bloggrid.component';
 import { DetailComponent } from '../blog/detail/detail.component';
 
 @NgModule({
-    declarations: [BloglistComponent, BloggridComponent, DetailComponent],
     imports: [
-        CommonModule,
-        BlogRoutingModule,
-        NgbNavModule,
-        NgbTooltipModule,
-        UIModule
-    ]
+    BloglistComponent,
+    BloggridComponent,
+    DetailComponent,
+    CommonModule,
+    BlogRoutingModule,
+    NgbNavModule,
+    NgbTooltipModule,
+    UIModule
+  ]
 })
 
 export class BlogModule { }

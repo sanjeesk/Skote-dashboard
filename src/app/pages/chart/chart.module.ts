@@ -15,8 +15,11 @@ import { ChartistComponent } from './chartist/chartist.component';
 import { EchartComponent } from './echart/echart.component';
 
 @NgModule({
-  declarations: [ApexComponent, ChartjsComponent, ChartistComponent, EchartComponent],
   imports: [
+    ApexComponent,
+    ChartjsComponent,
+    ChartistComponent,
+    EchartComponent,
     CommonModule,
     ChartRoutingModule,
     UIModule,
